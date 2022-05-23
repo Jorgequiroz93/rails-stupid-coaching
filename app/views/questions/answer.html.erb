@@ -1,0 +1,17 @@
+<div class = "question">
+  <p><%= params[:question].downcase %>
+  <br><br>
+  - Me</p> 
+</div>
+
+<br>
+<br>
+<div class = "answer">
+    <p><%= @answer %></p>
+</div>
+<br>
+<br>
+
+<div class = "button">
+    <%= link_to "Ask!", ask_path %>
+</div>

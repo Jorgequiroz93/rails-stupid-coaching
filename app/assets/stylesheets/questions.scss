@@ -1,0 +1,64 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$gray: #F4F4F4;
+
+ body {
+   background: $gray; // Using this variable
+ }
+
+ p { 
+     font-size: 35px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+
+ .answer {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-justify: auto;
+    align-content: center;
+    box-shadow: 10px 10px 30px black;
+    margin: 20px 20vw;
+    padding: 30px;
+    // background-image: linear-gradient(to bottom right, red, yellow);
+    animation-name: answer;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+ }
+
+ .question {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 10px 10px 30px black;
+    margin: 20px 20vw;
+    padding: 30px;
+    // background-image: linear-gradient(to bottom right, red, yellow);
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes example {
+    from {
+        background-color: black;
+        color: white;
+    }
+    to {
+        background-color:white; 
+        color: black;
+    }
+  }
+ @keyframes answer {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color:black;
+        color: #F4F4F4;
+    }
+ }
